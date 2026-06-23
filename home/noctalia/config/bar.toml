@@ -1,0 +1,21 @@
+[bar.default]
+center = ["workspaces"]
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+]
+font_family = "Noto Sans CJK TC"
+margin_edge = 0
+margin_ends = 0
+radius = 0
+start = ["clock", "wallpaper", "launcher"]
+thickness = 40
+widget_spacing = 10

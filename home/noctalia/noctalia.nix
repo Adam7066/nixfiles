@@ -11,6 +11,6 @@ in
     systemd.enable = true;
   };
 
-  xdg.configFile."noctalia/config.toml".source = config.lib.file.mkOutOfStoreSymlink "${noctaliaPath}/config.toml";
+  xdg.configFile."noctalia".source = config.lib.file.mkOutOfStoreSymlink "${noctaliaPath}/config";
   home.file."Pictures/wallpapers".source = config.lib.file.mkOutOfStoreSymlink "${noctaliaPath}/wallpapers";
 }

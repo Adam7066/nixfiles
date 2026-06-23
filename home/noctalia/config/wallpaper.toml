@@ -1,0 +1,12 @@
+[wallpaper]
+directory = "~/Pictures/wallpapers"
+enable = true
+
+[wallpaper.default]
+path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+
+[wallpaper.last]
+path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+
+[wallpaper.monitors.Virtual-1]
+path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
