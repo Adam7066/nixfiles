@@ -11,6 +11,15 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake/beta";
+      inputs = {
+        nixpkgs.follows = "nixpkgs-unstable";
+        home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
