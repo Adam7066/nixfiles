@@ -13,6 +13,7 @@ in
 
   imports = [
     ./apps.nix
+    ./git.nix
     ./zen-browser/zen-browser.nix
     ./zsh/zsh.nix
     ./noctalia/noctalia.nix
