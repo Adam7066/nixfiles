@@ -1,0 +1,68 @@
+[backdrop]
+blur_intensity = 0.5
+enabled = true
+tint_intensity = 0.29999999999999999
+
+[bar.default]
+margin_edge = 0
+margin_ends = 0
+thickness = 40
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+[desktop_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[desktop_widgets.widget]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = ["lockscreen-login-box@Virtual-1"]
+
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
+box_height = 0.0
+box_width = 0.0
+cx = 735.0
+cy = 800.0
+output = "Virtual-1"
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@Virtual-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+input_opacity = 1.0
+input_radius = 6.0
+show_login_button = true
+
+[shell]
+lang = "zh-Hant"
+font_family = "Noto Sans CJK TC"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-tonal-spot"
+
+[wallpaper]
+directory = "~/Pictures/wallpapers"
+enable = true
+
+[wallpaper.default]
+path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+
+[wallpaper.last]
+path = "/home/smallten/Pictures/wallpapers/04_backiee-119980-landscape.jpg"

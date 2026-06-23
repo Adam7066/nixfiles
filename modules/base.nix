@@ -1,0 +1,55 @@
+{ pkgs, ... }:
+{
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+    settings = {
+      experimental-features = [ "nix-command" "flakes" ];
+      auto-optimise-store = true;
+      substituters = [
+        "https://cache.nixos.org/"
+        "https://noctalia.cachix.org"
+      ];
+      trusted-public-keys = [
+        "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+        "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
+      ];
+    };
+  };
+
+  nixpkgs.config.allowUnfree = true;
+
+  # TODO: vmware remove
+  virtualisation.vmware.guest.enable = true;
+
+  boot.loader.systemd-boot = {
+    enable = true;
+    configurationLimit = 10;
+  };
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  networking.networkmanager.enable = true;
+
+  hardware.bluetooth.enable = true;
+
+  time.timeZone = "Asia/Taipei";
+
+  environment.variables.EDITOR = "vim";
+
+  programs.zsh.enable = true;
+
+  users.users.smallten = {
+    isNormalUser = true;
+    description = "smallten";
+    shell = pkgs.zsh;
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+  };
+
+  system.stateVersion = "26.05";
+}
