@@ -14,6 +14,7 @@ in
   imports = [
     ./apps.nix
     ./git.nix
+    ./gpg.nix
     ./zen-browser/zen-browser.nix
     ./zsh/zsh.nix
     ./noctalia/noctalia.nix
