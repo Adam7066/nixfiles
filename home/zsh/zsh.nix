@@ -17,6 +17,8 @@
     initContent = lib.mkMerge [
       (
         ''
+          export ZLE_RPROMPT_INDENT=0
+          
           [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
         ''
       )
