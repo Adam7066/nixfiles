@@ -18,6 +18,7 @@ in
     ./zen-browser/zen-browser.nix
     ./zsh/zsh.nix
     ./noctalia/noctalia.nix
+    ./nixvim.nix
   ];
 
   # TODO: vmware remove

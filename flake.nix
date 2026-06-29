@@ -11,6 +11,10 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     zen-browser = {
