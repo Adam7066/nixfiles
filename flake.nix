@@ -15,6 +15,7 @@
       url = "github:nix-community/nixvim/nixos-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     zen-browser = {
@@ -27,18 +28,15 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.fl13pro = nixpkgs.lib.nixosSystem {
-      # TODO: vmware remove
-      system = "aarch64-linux";
-      # system = ""x86_64-linux";
+    nixosConfigurations.ap201tg = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
-        ./hosts/fl13pro/default.nix
+        ./hosts/ap201tg/default.nix
         home-manager.nixosModules.home-manager
       ];
     };
 
-    formatter.aarch64-linux = nixpkgs.legacyPackages.aarch64-linux.nixpkgs-fmt;
-    # formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
   };
 }

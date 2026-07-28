@@ -1,0 +1,3 @@
+[osd]
+enabled = false
+monitors = ["DP-1"]

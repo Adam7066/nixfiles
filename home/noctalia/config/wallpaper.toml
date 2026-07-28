@@ -1,12 +1,26 @@
 [wallpaper]
 directory = "~/Pictures/wallpapers"
 enable = true
+per_monitor_directories = true
+
+[wallpaper.automation]
+enabled = true
+interval_seconds = 900
 
 [wallpaper.default]
-path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+path = "/home/smallten/Pictures/wallpapers/horizontal/01_pexels-aarti-vijay-2693529.jpg"
 
 [wallpaper.last]
-path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+path = "/home/smallten/Pictures/wallpapers/vertical/02.jpg"
 
-[wallpaper.monitors.Virtual-1]
-path = "/home/smallten/Pictures/wallpapers/00_MafuteruWallpaper.png"
+[wallpaper.monitor.DP-1]
+directory = "/home/smallten/Pictures/wallpapers/horizontal"
+
+[wallpaper.monitor.HDMI-A-1]
+directory = "/home/smallten/Pictures/wallpapers/vertical"
+
+[wallpaper.monitors.DP-1]
+path = "/home/smallten/Pictures/wallpapers/horizontal/01_pexels-aarti-vijay-2693529.jpg"
+
+[wallpaper.monitors.HDMI-A-1]
+path = "/home/smallten/Pictures/wallpapers/vertical/02.jpg"

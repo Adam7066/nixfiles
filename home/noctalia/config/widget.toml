@@ -1,6 +1,0 @@
-[widget.clock]
-format = "%b%e日%A  %p %I : %M"
-
-[widget.workspaces]
-hide_when_empty = true
-scale = 1.2

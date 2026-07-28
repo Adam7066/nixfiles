@@ -2,7 +2,7 @@ default:
 	@just --list
 
 build:
-	sudo nixos-rebuild switch --flake .#fl13pro
+	sudo nixos-rebuild switch --flake .#ap201tg
 
 fmt:
 	find . -type f -name '*.nix' -print0 | xargs -0 nix fmt --

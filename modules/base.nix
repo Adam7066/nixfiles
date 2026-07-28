@@ -22,9 +22,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # TODO: vmware remove
-  virtualisation.vmware.guest.enable = true;
-
   boot.loader.systemd-boot = {
     enable = true;
     configurationLimit = 10;
@@ -35,9 +32,25 @@
 
   hardware.bluetooth.enable = true;
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # 相容 Steam/Wine... 32-bit 遊戲
+  };
+  hardware.nvidia = {
+    open = true;
+    modesetting.enable = true;
+  };
+
   time.timeZone = "Asia/Taipei";
 
-  environment.variables.EDITOR = "vim";
+  environment = {
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+    };
+    variables = {
+      EDITOR = "vim";
+    };
+  };
 
   programs.zsh.enable = true;
 
