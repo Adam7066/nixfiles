@@ -22,7 +22,6 @@ in
 
   imports = [
     ./apps.nix
-    ./flatpak.nix
     ./git.nix
     ./gpg.nix
     ./zen-browser/zen-browser.nix

@@ -15,7 +15,6 @@
       url = "github:nix-community/nixvim/nixos-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     zen-browser = {
@@ -28,11 +27,11 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.ap201tg = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.office = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
-        ./hosts/ap201tg/default.nix
+        ./hosts/office/default.nix
         home-manager.nixosModules.home-manager
       ];
     };

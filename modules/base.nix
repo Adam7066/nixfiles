@@ -35,11 +35,13 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true; # 相容 Steam/Wine... 32-bit 遊戲
+    extraPackages = with pkgs; [
+      intel-media-driver # VAAPI (iHD), 新一點的 Intel 內顯
+      vpl-gpu-rt # Quick Sync Video
+    ];
   };
-  hardware.nvidia = {
-    open = true;
-    modesetting.enable = true;
-  };
+
+  environment.variables.LIBVA_DRIVER_NAME = "iHD";
 
   time.timeZone = "Asia/Taipei";
 

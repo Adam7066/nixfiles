@@ -1,7 +1,6 @@
 [shell]
 font_family = "Noto Sans CJK TC"
-# lang = "zh-Hant"
-lang = "zh-Hans"
+lang = "zh-Hant"
 
 [shell.launcher]
 compact = true

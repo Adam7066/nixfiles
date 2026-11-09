@@ -1,7 +1,7 @@
 [theme]
 builtin = "Noctalia"
 community_palette = "Doomed"
-mode = "dark"
+mode = "light"
 source = "builtin"
 wallpaper_scheme = "m3-tonal-spot"
 

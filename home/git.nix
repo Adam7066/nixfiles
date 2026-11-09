@@ -5,8 +5,8 @@
     settings = {
       user = {
         name = "Smallten";
-        email = "smallten@smallten.me";
-        signingKey = "5FEC67797E2A4E4F16CB6DC002FBD8B86C3C6948";
+        email = "smallten@proton.me";
+        signingKey = "091C610D2F80EAD3A54ABDCF71A90CEE9EB01E69";
       };
       core.editor = "vim";
       commit.gpgSign = true;

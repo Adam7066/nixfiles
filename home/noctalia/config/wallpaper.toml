@@ -7,20 +7,9 @@ per_monitor_directories = true
 enabled = true
 interval_seconds = 900
 
-[wallpaper.default]
-path = "/home/smallten/Pictures/wallpapers/horizontal/01_pexels-aarti-vijay-2693529.jpg"
-
-[wallpaper.last]
-path = "/home/smallten/Pictures/wallpapers/vertical/02.jpg"
-
 [wallpaper.monitor.DP-1]
-directory = "/home/smallten/Pictures/wallpapers/horizontal"
+directory = "~/Pictures/wallpapers/horizontal"
 
 [wallpaper.monitor.HDMI-A-1]
-directory = "/home/smallten/Pictures/wallpapers/vertical"
-
-[wallpaper.monitors.DP-1]
-path = "/home/smallten/Pictures/wallpapers/horizontal/01_pexels-aarti-vijay-2693529.jpg"
-
-[wallpaper.monitors.HDMI-A-1]
-path = "/home/smallten/Pictures/wallpapers/vertical/02.jpg"
+# directory = "~/Pictures/wallpapers/vertical"
+directory = "~/Pictures/wallpapers/horizontal"

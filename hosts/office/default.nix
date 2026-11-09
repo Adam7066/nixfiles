@@ -9,15 +9,12 @@
     ../../modules/services.nix
   ];
 
-  networking.hostName = "ap201tg";
+  networking.hostName = "office";
 
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs; };
-    sharedModules = [
-      inputs.nix-flatpak.homeManagerModules.nix-flatpak
-    ];
     users.smallten = import ../../home/home.nix;
   };
 }
