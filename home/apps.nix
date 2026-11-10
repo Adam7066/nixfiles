@@ -1,26 +1,24 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    corepack
+    claude-code
     fastfetch
     ghostty
     gnumake
     go
     google-chrome
-    just
-    ni
-    python3
-    slack
-    uv
-    #    vscode
-    nautilus
-    #    gitkraken
-    zed-editor
-    proton-pass
-    claude-code
     jetbrains.phpstorm
     jetbrains.pycharm
     jetbrains.webstorm
+    just
+    nautilus
+    ni
+    nodejs_latest
+    proton-pass
+    python3
+    slack
+    uv
     xwayland-satellite
+    zed-editor
   ];
 }
