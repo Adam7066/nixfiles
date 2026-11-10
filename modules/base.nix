@@ -56,6 +56,10 @@
 
   programs.zsh.enable = true;
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   users.users.smallten = {
     isNormalUser = true;
     description = "smallten";
@@ -63,6 +67,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "docker"
     ];
   };
 

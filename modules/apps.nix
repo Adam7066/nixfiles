@@ -9,5 +9,6 @@
     wget
     pciutils
     pavucontrol # PulseAudio 音量控制器
+    docker-compose
   ];
 }
