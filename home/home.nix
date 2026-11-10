@@ -29,6 +29,7 @@ in
     ./noctalia/noctalia.nix
     ./nixvim.nix
     ./vscode/vscode.nix
+    ./zed.nix
   ];
 
   xdg.configFile."niri".source = config.lib.file.mkOutOfStoreSymlink niriPath;
