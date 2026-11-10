@@ -110,6 +110,9 @@ show_weather = true
 monitors = ["DP-1"]
 position = "top_right"
 
+[osd.kinds]
+keyboard_layout = false
+
 [theme]
 builtin = "Noctalia"
 community_palette = "Doomed"
