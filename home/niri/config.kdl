@@ -22,7 +22,6 @@ cursor {
 output "DP-1" {
     mode "1920x1080@60"
     scale 1
-    variable-refresh-rate on-demand=true
 }
 
 // https://niri-wm.github.io/niri/Configuration:-Layout
@@ -136,6 +135,9 @@ binds {
     Mod+Right { focus-column-right; }
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
+
+    MouseBack    { focus-column-left; }
+    MouseForward { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Right { move-column-right; }
