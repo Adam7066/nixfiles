@@ -136,9 +136,6 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
 
-    MouseBack    { focus-column-left; }
-    MouseForward { focus-column-right; }
-
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+Down  { move-window-down; }
