@@ -1,0 +1,10 @@
+[
+  "html"
+  "git-firefly"
+  "toml"
+  "make"
+  "material-icon-theme"
+  "nix"
+  "just"
+  "xml"
+]

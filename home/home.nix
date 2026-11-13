@@ -24,12 +24,13 @@ in
     ./apps.nix
     ./git.nix
     ./gpg.nix
-    ./zen-browser/zen-browser.nix
-    ./zsh/zsh.nix
-    ./noctalia/noctalia.nix
     ./nixvim.nix
-    ./vscode/vscode.nix
-    ./zed.nix
+
+    ./noctalia
+    ./vscode
+    ./zed
+    ./zen-browser
+    ./zsh
   ];
 
   xdg.configFile."niri".source = config.lib.file.mkOutOfStoreSymlink niriPath;

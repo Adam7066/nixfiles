@@ -7,6 +7,7 @@
     gnumake
     go
     google-chrome
+    jetbrains.datagrip
     jetbrains.phpstorm
     jetbrains.pycharm
     jetbrains.webstorm
